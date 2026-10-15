@@ -4,11 +4,11 @@ import sys
 User_Grade = input("Enter your grade : ")
 
 if not User_Grade.isdecimal():
-    sys.exit("Error: Grade must be an interger between 0 and 100")
+    sys.exit("Error: Grade must be an integer between 0 and 100")
 
 User_Grade = int(User_Grade)
 if User_Grade > 100:
-    sys.exit("Error: Grade must be an interger between 0 and 100")
+    sys.exit("Error: Grade must be an integer between 0 and 100")
 
 if 70 <= User_Grade <= 100 :
     print(f"{User_Grade} is a Distinction")
