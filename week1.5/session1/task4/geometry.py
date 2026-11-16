@@ -35,6 +35,25 @@ class Point:
 
 # Add a definition for a Circle class here, giving it
 
+class Circle:
+    """A circle with a radius and centre point."""
+
+    def __init__(self, radius, centre=None):
+        """Create a circle with a radius and centre."""
+        self.radius = radius
+        if centre is None:
+            centre = Point(0.0, 0.0)
+        self.centre = centre
+
+    def area(self):
+        """Return the area of the circle."""
+        return math.pi * self.radius ** 2
+
+    def perimeter(self):
+        """Return the perimeter of the circle."""
+        return 2 * math.pi * self.radius
+
+
 #  - A constructor that creates fields to represent the centre & radius
 #    of a circle (assume centre is represented as a Point object)
 #  - A method area(), returning the area of the circle
